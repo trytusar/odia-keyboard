@@ -21,7 +21,7 @@ Use below meta tag in <head> tag of your page
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-In Java web application you may face an issue while showing dynamic content (odia font) from database. You can use below filter.
+In Java web application you may face an issue while showing dynamic content (odia font) from database. You may use the below filter.
 
 	<filter>  
 	    <filter-name>encodingFilter</filter-name>  
@@ -51,19 +51,19 @@ Include below css files in <head> tag of your page.
 Step-3:
 
 Include below script files before </body> tag. 
-(This example uses jQuery 3.1.1)
-NB: Please make sure you have included only one jQuery file
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/draggabilly.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/odia-keyboard.js"></script>
 
-
+NB: Please make sure you have included only one jQuery file. (This example uses jQuery 3.1.1)
 
 Sample Input field
+
 	<input type="text" name="name" class="odia_char_input" id="odia_name" style="width: 250px;" required="">
 
 Sample Keyboard picker image icon to trigger keyboard on click event.
+
 	<img alt="" src="images/keyboard-icon.png" width="55" height="35" id="odia_name_kb" class="odia_kb">
 
 
@@ -74,3 +74,10 @@ Include content of div#odia_keyboard in your page.
 	...
 
 	</div>
+	
+<b>Screenshot:</b>
+
+<img alt="" src="screenshots/odia-keyboard-screenshot.jpg" width="330" height="127" />
+
+<img alt="" src="screenshots/odia-keyboard-screenshot-2.jpg" width="330" height="127" />
+	
