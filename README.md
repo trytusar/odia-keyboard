@@ -45,8 +45,8 @@ Step-2:
 
 Include below css files in <head> tag of your page. 
 
-<link href="css/odia-keyboard.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/odia-keyboard.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 Step-3:
 
@@ -54,23 +54,23 @@ Include below script files before </body> tag.
 (This example uses jQuery 3.1.1)
 NB: Please make sure you have included only one jQuery file
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="js/draggabilly.pkgd.min.js"></script>
-<script type="text/javascript" src="js/odia-keyboard.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/draggabilly.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/odia-keyboard.js"></script>
 
 
 
 Sample Input field
-<input type="text" name="name" class="odia_char_input" id="odia_name" style="width: 250px;" required="">
+	<input type="text" name="name" class="odia_char_input" id="odia_name" style="width: 250px;" required="">
 
 Sample Keyboard picker image icon to trigger keyboard on click event.
-<img alt="" src="images/keyboard-icon.png" width="55" height="35" id="odia_name_kb" class="odia_kb">
+	<img alt="" src="images/keyboard-icon.png" width="55" height="35" id="odia_name_kb" class="odia_kb">
 
 
 Include content of div#odia_keyboard in your page.
 
-<div id="odia_keyboard" class="keyboard pop draggable keyboard_theme3" >
+	<div id="odia_keyboard" class="keyboard pop draggable keyboard_theme3" >
 
-...
+	...
 
-</div>
+	</div>
