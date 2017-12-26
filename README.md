@@ -1,13 +1,10 @@
-# odia-keyboard
-Odia HTML Keyboad with theme and drag support
+# Odia Virtual Keyboard
+Odia Virtual Keyboad with theme and drag support
 
-This a sample Odia keyboard script written in HTML and Java Script (jQuery).
-
-Odia HTML keyboard uses odia web font.
+This a sample Odia virtual keyboard script written in HTML, Java Script (jQuery) and odia web font.
 
 * Three color theme (Black, White, Blue).
 * Used draggabilly plugin to enable drag functionality.
-
 
 Plugins used:
 * bootstrap v3.3.4 css file
