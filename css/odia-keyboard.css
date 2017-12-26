@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'odia_web_font';
+  src: url('fonts/odia_font.eot');
+  src: local('☺'), url('../fonts/odia_font.woff') format('woff'), url('../fonts/odia_font.ttf') format('truetype'), url('../fonts/odia_font.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.odia
+{
+  font-family:'odia_web_font',Sans-Serif;  
+  text-align:left;
+  /* border:1px solid #666; */
+  font-size: 14px;  
+}
+
+#odia_keyboard{
+  font-size: 25px; 
+  display: none; 
+  left: 50px; 
+  top: 0px;
+}
+.keyboard
+{
+  font-family:'odia_web_font',Sans-Serif;
+  width:100%;
+  margin:10px auto;
+  text-align:left;
+  /* border:1px solid #666; */
+  padding:10px;
+}
+.keyboard div{
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+.keyboard span{
+  font-size: 20px;
+}
+#char_container{
+  margin-top: 6px;
+}
+.phonetic_keychar{
+  padding: 0px;
+  margin: 0;
+  cursor: pointer;
+  border:1px solid #666;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  background-color: #333;
+  transition: box-shadow 0.7s ease;
+  line-height: 28px;
+  overflow: hidden;
+
+}
+#gap{
+  padding: 0px;
+  margin: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 28px;
+  overflow: hidden;
+}
+.dotcircle{
+  line-height: 28px;
+}
+.phonetic_keychar:hover{box-shadow:0px 0px 10px #14B524; z-index:1000;}
+
+#odia_dist{
+  font-family:'odia_web_font',Sans-Serif;
+}
+#odia_name{
+  font-family:'odia_web_font',Sans-Serif;
+}
+
+.odia_font{
+  font-family:'odia_web_font',Sans-Serif;
+}
+.odia_font_16{
+  font-size: 16px;
+}
+.odia_font option{
+  font-family:'odia_web_font',Sans-Serif;
+}
+.phonetic_inst{
+  font-family:Sans-Serif;
+  padding: 2px;
+  margin: 2px;
+  cursor: pointer;
+  border:1px solid #666;
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.keyboard {
+  background-color: #111;
+  color: #fff;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 120px;
+  position:absolute;
+  text-align:left;
+  width:660px;
+  z-index:50;
+  padding: 25px 7px 0px 7px;
+  cursor:move;
+           
+}
+
+.keyboard_theme1{
+  background-color: #111;
+  color: #fff;
+  border:1px solid #999999;
+}
+.keyboard_theme2{
+  background-color: #f5fcf8;
+  color: #000;
+  border:1px solid #999999;
+}
+.keyboard_theme3{
+  background-color: #0076a8;
+  color: #fff;
+  border:1px solid #999999;
+}
+
+.keyboard_key_theme1{
+  background-color: #333;
+  color: #fff;
+  border:1px solid #999999;
+}
+.keyboard_key_theme2{
+  background-color: #f5fcf8;
+  color: #000;
+  border:1px solid #999999;
+}
+.keyboard_key_theme3{
+  background-color: #044a65;
+  color: #fff;
+  border:1px solid #999999;
+}
+
+
+
+
+.noselect{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.eng{
+  font-family: serif;
+}
+.kbbanner_container{
+  border-bottom: 1px solid #000;
+  font-family: serif;
+    height: 25px;
+    margin-top: -9px!important;
+    background: #607D8B;
+    margin: -25px -7px -0px -7px!important;
+}
+div.kbbanner{
+  float: left;
+  color: #fff;
+  display: block;
+  height: 20px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+div.close{
+  float: right;
+  /* background: #fff; */
+  color: #000;
+  cursor: pointer;
+  /* border-radius: 50%;
+  padding: 5px; */
+  margin-top: -4px;
+  opacity:1;
+}
+
+#commonchar_block_2{
+  margin-right: -6px;
+    float: right;
+}
+
+#yuktakshyara_block{
+  display: none;
+}
+
+.backspace{
+  padding: 0px;
+  margin: 2px;
+  cursor: pointer;
+  border:1px solid #666;
+  width: 28px;
+  height: 26px;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  width: 90px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 6px;
+  transition: box-shadow 0.7s ease;
+
+}
+.switch_charblock{
+    overflow: hidden;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px;
+    cursor: pointer;
+    border: 1px solid #666;
+    width: 90px;
+    height: 26px;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    background: #31b0d5;
+    letter-spacing: 1px;
+    color: #000;
+}
+.switch_charblock.eng{    
+    line-height: 17px;
+    letter-spacing: 0px;
+    
+}
+
+.spacebar{
+    overflow: hidden;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px;
+    cursor: pointer;
+    border: 1px solid #666;
+    width: 90px;
+    height: 26px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    transition: box-shadow 0.7s ease;
+    
+}
+
+.kbbanner_container div{
+  /* width: 200px; */
+  display: inline-block;
+}
+#closebtn_container{
+  float: right;
+}
+#kbtheme_block_container{
+  float: right;
+  margin-right: 30px;
+}
+.spacebar:hover,.backspace:hover{box-shadow:0px 0px 10px #14B524; z-index:1000;}
+
+.special_key{
+      font-size: 16px!important;
+}
+.draggable.is-pointer-down {
+  /* background: #09F; */
+}
+.draggable.is-dragging { opacity: 0.7; }
+
+.kbtheme_block ul{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: -34px;
+}
+
+
+.kbtheme_block ul li{
+  color: #AAAAAA;
+  display: inline-block;
+  position: relative;
+  float: left;
+  /*width:100%;*/
+  height: 15px;
+	
+}
+
+.kbtheme_block ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.kbtheme_block ul li label{
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+ padding: 7px 10px 17px 17px;
+  margin: 10px auto;
+  height: 15px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.kbtheme_block ul li:hover label{
+	color: #FFFFFF;
+}
+
+.kbtheme_block ul li .check{
+  display: inline-block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 20px;
+  left: 10px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+.kbtheme_block ul li:hover .check {
+  border: 8px solid #FFFFFF;
+}
+
+.kbtheme_block ul li .check::before {
+ /*  display: inline-block;
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+	left: 5px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear; */
+}
+
+#kbtheme1 input[type=radio] ~ .check {
+  border: 5px solid #000;
+}
+#kbtheme2 input[type=radio] ~ .check {
+  border: 5px solid #f5fcf8;
+}
+#kbtheme3 input[type=radio] ~ .check {
+  border: 5px solid #0076a8;
+}
+
+#kbtheme1 input[type=radio]:checked ~ .check {
+  border: 7px solid #000;
+}
+#kbtheme2 input[type=radio]:checked ~ .check {
+  border: 7px solid #f5fcf8;
+}
+#kbtheme3 input[type=radio]:checked ~ .check {
+  border: 7px solid #0076a8;
+}
+
+.kbtheme_block input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+.kbtheme_block input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+#odia_name_kb{
+  cursor: pointer;
+}

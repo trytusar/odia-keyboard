@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Odia Keyboard</title>
+
+	<link href="css/odia-keyboard.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+<form>
+
+	<h3>Odia Keyboard</h3>
+		
+	</div>
+
+	<div class="alert alert-info">
+		Type in the Text field or Click on the Keyboard icon to open Odia keyboard.
+	</div> 
+
+	<input type="text" name="name" class="odia_char_input" id="odia_name" style="width: 250px;" required="">
+    <img alt="" src="images/keyboard-icon.png" width="55" height="35" id="odia_name_kb" class="odia_kb">
+                   
+</form>
+
+
+<div id="odia_keyboard" class="keyboard pop draggable keyboard_theme3" >
+<div class="kbbanner_container">
+	<div class="left1">
+	<div class="kbbanner">
+		<img alt="Odia Keyboard" src="images/keyboardwh.png" width="20" height="12"> Odia Keyboard
+	</div>
+	</div>
+	<div class="left1" id="closebtn_container">
+	<div class="close eng"><img src="images/closebtn.png" width="23" height="23"></div>
+	</div>
+	<div class="left1" id="kbtheme_block_container">
+	<div class="kbtheme_block">
+		<!-- <label><input type="radio" name="kbtheme" id="kbtheme1" class="radio kbtheme" checked="checked"></label>
+		<label><input type="radio" name="kbtheme" id="kbtheme2" class="radio kbtheme"></label>
+		<label><input type="radio" name="kbtheme" id="kbtheme3" class="radio kbtheme"></label> -->
+		
+		<ul>
+  <li id="kbtheme1">
+    <input type="radio" id="f-option" name="selector" checked="">
+    <label for="f-option" id=""></label>
+    
+    <div class="check"></div>
+  </li>
+  
+   <li id="kbtheme3">
+    <input type="radio" id="t-option" name="selector">
+    <label for="t-option"></label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+  <li id="kbtheme2">
+    <input type="radio" id="s-option" name="selector">
+    <label for="s-option"></label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+ 
+</ul>
+
+	</div>
+	</div>
+	
+</div>
+
+<div id="char_container">
+   
+ <div class="row" id="commonchar_block" style="">
+ <div class="col-md-6" id="commonchar_block_1">
+ 	<div class="left">
+		<span id="a" class="phonetic_keychar keyboard_key_theme3">@</span>
+		<span id="aa" class="phonetic_keychar keyboard_key_theme3">@û</span>
+	
+		<span id="e" class="phonetic_keychar keyboard_key_theme3">A</span>
+		<span id="ee" class="phonetic_keychar keyboard_key_theme3">B</span>
+		<span id="u" class="phonetic_keychar keyboard_key_theme3">C</span>
+		<span id="uu" class="phonetic_keychar keyboard_key_theme3">D</span>
+		<span id="r" class="phonetic_keychar keyboard_key_theme3">E</span>
+		<span id="ru" class="phonetic_keychar keyboard_key_theme3">F</span>
+		<span id="ae" class="phonetic_keychar keyboard_key_theme3">G</span>
+		<span id="ay" class="phonetic_keychar keyboard_key_theme3">H</span>
+		<span id="o" class="phonetic_keychar keyboard_key_theme3">I</span>
+		<span id="oo" class="phonetic_keychar keyboard_key_theme3">J</span>
+		
+		<div id="gap" class="">&nbsp;</div>
+	
+			<span id="k" class="phonetic_keychar keyboard_key_theme3">K</span>
+			<span id="kh" class="phonetic_keychar keyboard_key_theme3">L</span>
+			<span id="g" class="phonetic_keychar keyboard_key_theme3">M</span>
+			<span id="gh" class="phonetic_keychar keyboard_key_theme3">N</span>
+			<span id="un" class="phonetic_keychar keyboard_key_theme3">O</span>
+			<span id="ch" class="phonetic_keychar keyboard_key_theme3">P</span>
+			<span id="chh" class="phonetic_keychar keyboard_key_theme3">Q</span>
+			<span id="j" class="phonetic_keychar keyboard_key_theme3">R</span>
+			<span id="jh" class="phonetic_keychar keyboard_key_theme3">S</span>
+			<span id="ny" class="phonetic_keychar keyboard_key_theme3">T</span>
+			<span id="t" class="phonetic_keychar keyboard_key_theme3">U</span>
+			<span id="th" class="phonetic_keychar keyboard_key_theme3">V</span>
+			<span id="d" class="phonetic_keychar keyboard_key_theme3">W</span>
+			<span id="d1" class="phonetic_keychar keyboard_key_theme3">Wÿ</span>
+			<span id="d2" class="phonetic_keychar keyboard_key_theme3">X</span>
+			<span id="d3" class="phonetic_keychar keyboard_key_theme3" style="display:none">Xÿ</span> 
+			<span id="na" class="phonetic_keychar keyboard_key_theme3">Y</span>
+		
+		
+		
+		    <span id="ta" class="phonetic_keychar keyboard_key_theme3">Z</span>
+		    <span id="tha" class="phonetic_keychar keyboard_key_theme3">[</span>
+		    <span id="da" class="phonetic_keychar keyboard_key_theme3">\</span>
+		    <span id="dha" class="phonetic_keychar keyboard_key_theme3">]</span>
+		
+		
+		    <span id="n" class="phonetic_keychar keyboard_key_theme3">^</span>
+			<span id="p" class="phonetic_keychar keyboard_key_theme3">_</span>
+			<span id="f" class="phonetic_keychar keyboard_key_theme3">`</span>
+		    <span id="b" class="phonetic_keychar keyboard_key_theme3">a</span>
+			<span id="v" class="phonetic_keychar keyboard_key_theme3">b</span>
+			<span id="m" class="phonetic_keychar keyboard_key_theme3">c</span>
+			<span id="j" class="phonetic_keychar keyboard_key_theme3">~</span>
+			<span id="ra" class="phonetic_keychar keyboard_key_theme3">e</span>
+			<span id="l" class="phonetic_keychar keyboard_key_theme3">k</span>
+			<span id="s" class="phonetic_keychar keyboard_key_theme3">i</span>
+			<span id="sh" class="phonetic_keychar keyboard_key_theme3">h</span>
+			<span id="sh." class="phonetic_keychar keyboard_key_theme3">g</span>
+			<span id="h" class="phonetic_keychar keyboard_key_theme3">j</span>
+			<span id="ky" class="phonetic_keychar keyboard_key_theme3">l</span>
+			<span id="ya" class="phonetic_keychar keyboard_key_theme3">d</span>
+			<span id="la" class="phonetic_keychar keyboard_key_theme3">f</span>
+	
+	
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¬</span>
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‚</span>
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">∙</span>
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">…</span>
+		
+	
+	 
+	 
+</div>
+	
+		
+ 
+ </div>  
+ 
+ <div class="col-md-6" id="commonchar_block_2">
+ 		
+ 		
+ 		
+<div class="left">
+	<span id="sp1" class="phonetic_keychar dotcircle keyboard_key_theme3">◌û</span>
+	<span id="sp2" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ò</span>
+	<span id="sp3" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ú</span>
+	<span id="sp4" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ê</span>
+	<span id="sp5" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ì</span>
+	<span id="sp6" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ù</span>
+	<span id="sp7" class="phonetic_keychar dotcircle keyboard_key_theme3">◌÷÷</span>
+	<span id="sp8" class="phonetic_keychar dotcircle keyboard_key_theme3">◌øû</span>
+	<span id="sp9" class="phonetic_keychar dotcircle keyboard_key_theme3">◌øø</span>
+	<span id="sp10" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ô</span>
+	<span id="sp11" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ý</span>
+	<span id="sp12" class="phonetic_keychar dotcircle keyboard_key_theme3">◌â</span>
+	<span id="sp13" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ð</span>
+	<span id="sp14" class="phonetic_keychar dotcircle keyboard_key_theme3">◌é</span>
+	
+	<span id="sp17" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ü</span>
+	<span id="sp18" class="phonetic_keychar dotcircle keyboard_key_theme3">◌õ</span>
+	<span id="sp19" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ñ</span>
+	<span id="sp20" class="phonetic_keychar dotcircle keyboard_key_theme3">◌à</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ñ</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ò</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ó</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ô</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Õ</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ö</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌×</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ø</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ù</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ú</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Û</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ü</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ý</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Þ</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ß</span>
+
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ä</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌å</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌æ</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌è</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ˆ</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌˜</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌†</span>
+		<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌£</span>
+	
+		
+</div>
+
+	<div class="left">
+		 <span class="backspace phonetic_inst backspace eng omitchar special_key keyboard_key_theme3">Backspace</span>
+		 <span class="phonetic_keychar spacebar phonetic_inst eng omitchar special_key keyboard_key_theme3">Space</span>		 
+		 <span class="switch_charblock phonetic_keychar odia omitchar special_key keyboard_key_theme3">~êqûle</span>
+	</div>
+
+ 
+ </div>  
+ <!-- /<div class="col-md-6"> /commonchar_block_2  -->
+ 
+ </div>  
+
+
+
+<div class="left" id="yuktakshyara_block" style="display: none;">
+	<span id="kn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">u</span>
+	<span id="khn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">v</span>
+	<span id="gn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">w</span>
+	<span id="ghn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">x</span>
+	<span id="chhh" class="phonetic_keychar yuktakshyara keyboard_key_theme3">y</span>
+	<span id="chhhh" class="phonetic_keychar yuktakshyara keyboard_key_theme3">z</span>
+	<span id="jj" class="phonetic_keychar yuktakshyara keyboard_key_theme3">{</span>
+	<span id="gj" class="phonetic_keychar yuktakshyara keyboard_key_theme3">|</span>
+	<span id="gn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">m</span>
+    <span id="vv" class="phonetic_keychar yuktakshyara keyboard_key_theme3">n</span>
+	<span id="kk" class="phonetic_keychar yuktakshyara keyboard_key_theme3">o</span>
+    <span id="kt" class="phonetic_keychar yuktakshyara keyboard_key_theme3">q</span>
+	<span id="ks" class="phonetic_keychar yuktakshyara keyboard_key_theme3">r</span>
+	<span id="kr" class="phonetic_keychar yuktakshyara keyboard_key_theme3">p</span>
+	<span id="gc" class="phonetic_keychar yuktakshyara keyboard_key_theme3">s</span>
+	<span id="gd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">t</span>
+
+
+
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‹</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Œ</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‰</span>
+	
+	
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">±</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">}</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¦</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">ª</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">«</span>
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">®</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¯</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">°</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">²</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">´</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">µ</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¶</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¸</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¹</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">½</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¼</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">½</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¾</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¿</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">À</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Á</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Â</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ã</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ä</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Å</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Æ</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ç</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">È</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">É</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ê</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ë</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ì</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Í</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ï</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ð</span>
+
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ÿ</span>
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‡</span>
+	
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">›</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">™</span>
+	
+
+<div class="left">
+		 <span class="backspace phonetic_inst backspace eng omitchar special_key keyboard_key_theme3">Backspace</span>
+		  <span class="phonetic_keychar spacebar phonetic_inst eng omitchar special_key keyboard_key_theme3">Space</span>	
+		 <span class="switch_charblock phonetic_keychar eng omitchar special_key!important keyboard_key_theme3" style="width:200px">Main Keyboard</span>
+	</div>
+
+</div>
+
+
+
+</div>
+<!--  /char_container  -->
+</div>
+
+
+<!--jQuery v3.1.1 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/draggabilly.pkgd.min.js"></script>
+<script type="text/javascript" src="js/odia-keyboard.js"></script>
+</body>
+</html>
