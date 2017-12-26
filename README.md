@@ -75,6 +75,15 @@ Include content of div#odia_keyboard in your page.
 
 	</div>
 	
+Update top and left position of the keyboard in odia-keyboard.css file
+
+	#odia_keyboard{
+	  font-size: 25px; 
+	  display: none; 
+	  left: 50px; 
+	  top: 50px;
+	}
+	
 <b>Screenshot:</b>
 
 <img alt="" src="screenshots/odia-keyboard-screenshot.jpg" width="330" height="127" />
