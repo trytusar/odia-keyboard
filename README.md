@@ -10,10 +10,7 @@ Plugins used:
 * bootstrap v3.3.4 css file
 * draggabilly js file
 
-<a href="https://xtracodes.com/codes/odia-virtual-keyboard/keyboard.html" target="_blank">Demo</a>
-
 ### <a href="https://xtracodes.com/codes/odia-virtual-keyboard/keyboard.html" target="_blank">Demo</a>
-
 
 #### How to use ?
 
@@ -69,12 +66,13 @@ Sample Keyboard picker image icon to trigger keyboard on click event.
 	<img alt="" src="images/keyboard-icon.png" width="55" height="35" id="odia_name_kb" class="odia_kb">
 
 
-Include content of div#odia_keyboard in your page.
+Include content of div#odia_keyboard and div#char_container in your page.
 
 	<div id="odia_keyboard" class="keyboard pop draggable keyboard_theme3" >
-
 	...
-
+	</div>
+	<div id="char_container">
+	...
 	</div>
 	
 Update top and left position of the keyboard in odia-keyboard.css file
