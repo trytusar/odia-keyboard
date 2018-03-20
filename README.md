@@ -10,7 +10,10 @@ Plugins used:
 * bootstrap v3.3.4 css file
 * draggabilly js file
 
+<a href="https://xtracodes.com/codes/odia-virtual-keyboard/keyboard.html" target="_blank">Demo</a>
+
 ### <a href="https://xtracodes.com/codes/odia-virtual-keyboard/keyboard.html" target="_blank">Demo</a>
+
 
 #### How to use ?
 
