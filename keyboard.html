@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Odia Keyboard</title>
+
+	<link href="css/odia-keyboard.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+<form>
+
+	<h3>Odia Keyboard</h3>
+		
+	</div>
+
+	<div class="alert alert-info">
+		Type in the Text field or Click on the Keyboard icon to open Odia keyboard.
+	</div> 
+
+	<input type="text" name="name" class="odia_char_input" id="odia_name" style="width: 250px;" required="">
+    <img alt="" src="images/keyboard-icon.png" width="55" height="35" id="odia_name_kb" class="odia_kb">
+                   
+</form>
+
+<hr/>
+
+<p>
+	<div class="alert alert-info">
+		<div class="kbtheme_block" style="margin-top:5px;">
+				
+				<ul>
+				  <li id="kbtheme1">
+				    <input type="radio" id="f-option" name="selector" checked="">
+				    <label for="f-option" id=""></label>
+				    
+				    <div class="check"></div>
+				  </li>
+				  
+				   <li id="kbtheme3">
+				    <input type="radio" id="t-option" name="selector">
+				    <label for="t-option"></label>
+				    
+				    <div class="check"><div class="inside"></div></div>
+				  </li>
+				  
+				  <li id="kbtheme2">
+				    <input type="radio" id="s-option" name="selector">
+				    <label for="s-option"></label>
+				    
+				    <div class="check"><div class="inside"></div></div>
+				  </li>
+				  
+				 
+				</ul>
+
+
+			</div>
+			<p class="msg-text">Click these color buttons to change the keyboard theme.</p>
+			
+		</div>
+
+</p>
+<p>
+	<div class="alert alert-info">
+		
+			<p class="drag-text"> <i class="fa fa-arrows"></i> You can drag the keyboard by clicking (on the title bar of the keyboard) and moving the mouse </p>
+		</div>
+
+</p>
+<p>
+	<img alt="" src="screenshots/odia-keyboard-screenshot.jpg" width="330" height="127" style="max-width:100%;">
+	<img alt="" src="screenshots/odia-keyboard-screenshot-2.jpg" width="330" height="127" style="max-width:100%;">
+</p>
+
+<div class="code" contenteditable>
+
+	<b>How to use ?</b>
+
+<b>Step-1:</b>
+
+Use below meta tag in &lt;head&gt; tag of your page
+
+&#x3C;meta http-equiv=&#x22;Content-Type&#x22; content=&#x22;text/html; charset=utf-8&#x22; /&#x3E;
+
+In Java web application you may face an issue while showing dynamic content (odia font) from database. You may use the below filter.
+
+	&#x3C;filter&#x3E;  
+	&#x9;&#x9;    &#x3C;filter-name&#x3E;encodingFilter&#x3C;/filter-name&#x3E;  
+	&#x9;&#x9;    &#x3C;filter-class&#x3E;org.springframework.web.filter.CharacterEncodingFilter&#x3C;/filter-class&#x3E;  
+	&#x9;&#x9;    &#x3C;init-param&#x3E;  
+	&#x9;&#x9;       &#x3C;param-name&#x3E;encoding&#x3C;/param-name&#x3E;  
+	&#x9;&#x9;       &#x3C;param-value&#x3E;UTF-8&#x3C;/param-value&#x3E;  
+	&#x9;&#x9;    &#x3C;/init-param&#x3E;  
+	&#x9;&#x9;    &#x3C;init-param&#x3E;  
+	&#x9;&#x9;       &#x3C;param-name&#x3E;forceEncoding&#x3C;/param-name&#x3E;  
+	&#x9;&#x9;       &#x3C;param-value&#x3E;true&#x3C;/param-value&#x3E;  
+	&#x9;&#x9;    &#x3C;/init-param&#x3E;  
+	&#x9;&#x9;&#x3C;/filter&#x3E;  
+	&#x9;&#x9;&#x3C;filter-mapping&#x3E;  
+	&#x9;&#x9;    &#x3C;filter-name&#x3E;encodingFilter&#x3C;/filter-name&#x3E;  
+	&#x9;&#x9;    &#x3C;url-pattern&#x3E;*.html&#x3C;/url-pattern&#x3E;  
+	&#x9;&#x9;&#x3C;/filter-mapping&#x3E; 
+
+<b>Step-2:</b>
+
+Include below css files in &lt;head&gt; tag of your page. 
+
+	&#x3C;link href=&#x22;css/odia-keyboard.css&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;
+	&#x9;&#x3C;link href=&#x22;css/bootstrap.min.css&#x22; rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; /&#x3E;
+
+<b>Step-3:</b>
+
+Include below script files before &lt;/body&gt;  tag. 
+
+	&#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;js/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+	&#x9;&#x3C;script src=&#x22;js/draggabilly.pkgd.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+	&#x9;&#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;js/odia-keyboard.js&#x22;&#x3E;&#x3C;/script&#x3E;
+
+NB: Please make sure you have included only one jQuery file. (This example uses jQuery 3.1.1)
+
+Sample Input field
+
+	&#x3C;input type=&#x22;text&#x22; name=&#x22;name&#x22; class=&#x22;odia_char_input&#x22; id=&#x22;odia_name&#x22; style=&#x22;width: 250px;&#x22; required=&#x22;&#x22;&#x3E;
+
+Sample Keyboard picker image icon to trigger keyboard on click event.
+
+	&#x3C;img alt=&#x22;&#x22; src=&#x22;images/keyboard-icon.png&#x22; width=&#x22;55&#x22; height=&#x22;35&#x22; id=&#x22;odia_name_kb&#x22; class=&#x22;odia_kb&#x22;&#x3E;
+
+
+<hr/>
+
+	<b>Update top and left position of the keyboard in odia-keyboard.css file</b>
+
+	<code>
+		#odia_keyboard{
+		  font-size: 25px; 
+		  display: none; 
+		  left: 50px; 
+		  top: 50px;
+		}
+	</code>
+<hr/>	
+<b>Include content of div#odia_keyboard and div#char_container  in your page.</b>
+
+	&#x3C;div id=&#x22;odia_keyboard&#x22; class=&#x22;keyboard pop draggable keyboard_theme3&#x22; &#x3E;
+	...
+	&#x3C;/div&#x3E;
+	
+	&#x3C;div id=&#x22;odia_keyboard&#x22; class=&#x22;keyboard pop draggable keyboard_theme3&#x22; &#x3E;
+	...
+	&#x3C;/div&#x3E;
+
+	
+</div>
+
+
+
+<!--/ How to use ? -->
+
+<div class="code" contenteditable>
+	
+	<b>	&#x3C;div id=&#x22;odia_keyboard&#x22; class=&#x22;keyboard pop draggable keyboard_theme3&#x22; &#x3E; </b>
+			&#x9;&#x3C;div class=&#x22;kbbanner_container&#x22;&#x3E;
+			&#x9;   &#x3C;div class=&#x22;left1&#x22;&#x3E;
+			&#x9;&#x9;  &#x3C;div class=&#x22;kbbanner&#x22;&#x3E;
+			&#x9;&#x9;&#x9; &#x3C;img alt=&#x22;Odia Keyboard&#x22; src=&#x22;images/keyboardwh.png&#x22; width=&#x22;20&#x22; height=&#x22;12&#x22;&#x3E; Odia Keyboard
+			&#x9;&#x9;  &#x3C;/div&#x3E;
+			&#x9;   &#x3C;/div&#x3E;
+			&#x9;   &#x3C;div class=&#x22;left1&#x22; id=&#x22;closebtn_container&#x22;&#x3E;
+			&#x9;&#x9;  &#x3C;div class=&#x22;close eng&#x22;&#x3E;&#x3C;img src=&#x22;images/closebtn.png&#x22; width=&#x22;23&#x22; height=&#x22;23&#x22;&#x3E;&#x3C;/div&#x3E;
+			&#x9;   &#x3C;/div&#x3E;
+			&#x9;   &#x3C;div class=&#x22;left1&#x22; id=&#x22;kbtheme_block_container&#x22;&#x3E;
+			&#x9;&#x9;  &#x3C;div class=&#x22;kbtheme_block&#x22;&#x3E;
+			&#x9;&#x9;&#x9; &#x3C;ul&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x3C;li id=&#x22;kbtheme1&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;input type=&#x22;radio&#x22; id=&#x22;f-option&#x22; name=&#x22;selector&#x22; checked=&#x22;&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;label for=&#x22;f-option&#x22; id=&#x22;&#x22;&#x3E;&#x3C;/label&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;div class=&#x22;check&#x22;&#x3E;&#x3C;/div&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x3C;/li&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x3C;li id=&#x22;kbtheme3&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;input type=&#x22;radio&#x22; id=&#x22;t-option&#x22; name=&#x22;selector&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;label for=&#x22;t-option&#x22;&#x3E;&#x3C;/label&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;div class=&#x22;check&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x9;  &#x3C;div class=&#x22;inside&#x22;&#x3E;&#x3C;/div&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;/div&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x3C;/li&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x3C;li id=&#x22;kbtheme2&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;input type=&#x22;radio&#x22; id=&#x22;s-option&#x22; name=&#x22;selector&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;label for=&#x22;s-option&#x22;&#x3E;&#x3C;/label&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;div class=&#x22;check&#x22;&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x9;  &#x3C;div class=&#x22;inside&#x22;&#x3E;&#x3C;/div&#x3E;
+			&#x9;&#x9;&#x9;&#x9;   &#x3C;/div&#x3E;
+			&#x9;&#x9;&#x9;&#x9;&#x3C;/li&#x3E;
+			&#x9;&#x9;&#x9; &#x3C;/ul&#x3E;
+			&#x9;&#x9;  &#x3C;/div&#x3E;
+			&#x9;   &#x3C;/div&#x3E;
+			&#x9;&#x3C;/div&#x3E;
+
+		<b> &#x3C;/div&#x3E; </b>
+	<!-- /odia_keyboard -->
+
+</div>
+
+
+<div class="code" contenteditable>
+
+ <b>	&#x3C;div id=&#x22;char_container&#x22;&#x3E; </b>
+	   &#x3C;div class=&#x22;row&#x22; id=&#x22;commonchar_block&#x22; style=&#x22;&#x22;&#x3E;
+	      &#x3C;div class=&#x22;col-md-6&#x22; id=&#x22;commonchar_block_1&#x22;&#x3E;
+	         &#x3C;div class=&#x22;left&#x22;&#x3E;
+	            &#x3C;span id=&#x22;a&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;@&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;aa&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;@&#xFB;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;e&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;A&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ee&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;B&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;u&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;C&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;uu&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;D&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;r&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;E&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ru&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;F&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ae&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;G&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ay&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;H&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;o&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;I&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;oo&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;J&#x3C;/span&#x3E;
+	            &#x3C;div id=&#x22;gap&#x22; class=&#x22;&#x22;&#x3E;&#x26;nbsp;&#x3C;/div&#x3E;
+	            &#x3C;span id=&#x22;k&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;K&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;kh&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;L&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;g&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;M&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;gh&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;N&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;un&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;O&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ch&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;P&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;chh&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;Q&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;j&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;R&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;jh&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;S&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ny&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;T&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;t&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;U&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;th&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;V&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;d&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;W&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;d1&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;W&#xFF;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;d2&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;X&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;d3&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22; style=&#x22;display:none&#x22;&#x3E;X&#xFF;&#x3C;/span&#x3E; 
+	            &#x3C;span id=&#x22;na&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;Y&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ta&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;Z&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;tha&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;[&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;da&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;\&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;dha&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;]&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;n&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;^&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;p&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;_&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;f&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;&#x60;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;b&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;a&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;v&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;b&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;m&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;c&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;j&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;~&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ra&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;e&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;l&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;k&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;s&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;i&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sh&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;h&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sh.&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;g&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;h&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;j&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ky&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;l&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;ya&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;d&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;la&#x22; class=&#x22;phonetic_keychar keyboard_key_theme3&#x22;&#x3E;f&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xAC;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x201A;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x2219;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x2026;&#x3C;/span&#x3E;
+	         &#x3C;/div&#x3E;
+	      &#x3C;/div&#x3E;
+	      &#x3C;div class=&#x22;col-md-6&#x22; id=&#x22;commonchar_block_2&#x22;&#x3E;
+	         &#x3C;div class=&#x22;left&#x22;&#x3E;
+	            &#x3C;span id=&#x22;sp1&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xFB;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp2&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF2;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp3&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xFA;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp4&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xEA;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp5&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xEC;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp6&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF9;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp7&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF7;&#xF7;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp8&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF8;&#xFB;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp9&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF8;&#xF8;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp10&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF4;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp11&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xFD;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp12&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE2;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp13&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF0;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp14&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE9;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp17&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xFC;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp18&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF5;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp19&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xF1;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp20&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE0;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD1;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD2;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD3;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD4;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD5;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD6;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD7;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD8;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xD9;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xDA;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xDB;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xDC;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xDD;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xDE;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xDF;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE4;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE5;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE6;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xE8;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#x2C6;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#x2DC;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#x2020;&#x3C;/span&#x3E;
+	            &#x3C;span id=&#x22;sp&#x22; class=&#x22;phonetic_keychar dotcircle keyboard_key_theme3&#x22;&#x3E;&#x25CC;&#xA3;&#x3C;/span&#x3E;
+	         &#x3C;/div&#x3E;
+	         &#x3C;div class=&#x22;left&#x22;&#x3E;
+	            &#x3C;span class=&#x22;backspace phonetic_inst backspace eng omitchar special_key keyboard_key_theme3&#x22;&#x3E;Backspace&#x3C;/span&#x3E;
+	            &#x3C;span class=&#x22;phonetic_keychar spacebar phonetic_inst eng omitchar special_key keyboard_key_theme3&#x22;&#x3E;Space&#x3C;/span&#x3E;&#x9;&#x9; 
+	            &#x3C;span class=&#x22;switch_charblock phonetic_keychar odia omitchar special_key keyboard_key_theme3&#x22;&#x3E;~&#xEA;q&#xFB;le&#x3C;/span&#x3E;
+	         &#x3C;/div&#x3E;
+	      &#x3C;/div&#x3E;
+	      &#x3C;!-- /&#x3C;div class=&#x22;col-md-6&#x22;&#x3E; /commonchar_block_2  --&#x3E;
+	   &#x3C;/div&#x3E;
+	   &#x3C;div class=&#x22;left&#x22; id=&#x22;yuktakshyara_block&#x22; style=&#x22;display: none;&#x22;&#x3E;
+	      &#x3C;span id=&#x22;kn&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;u&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;khn&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;v&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;gn&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;w&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;ghn&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;x&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;chhh&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;y&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;chhhh&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;z&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;jj&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;{&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;gj&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;|&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;gn&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;m&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;vv&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;n&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;kk&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;o&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;kt&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;q&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;ks&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;r&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;kr&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;p&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;gc&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;s&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;gd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;t&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x2039;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x152;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x2030;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB1;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;}&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xA6;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xAA;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xAB;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xAE;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xAF;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB0;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB2;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB4;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB5;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB6;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB8;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xB9;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xBD;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xBC;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xBD;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xBE;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xBF;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC0;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC1;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC2;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC3;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC4;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC5;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC6;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC7;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC8;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xC9;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xCA;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xCB;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xCC;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xCD;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xCF;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#xD0;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x178;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x2021;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x203A;&#x3C;/span&#x3E;
+	      &#x3C;span id=&#x22;dd&#x22; class=&#x22;phonetic_keychar yuktakshyara keyboard_key_theme3&#x22;&#x3E;&#x2122;&#x3C;/span&#x3E;
+	      &#x3C;div class=&#x22;left&#x22;&#x3E;
+	         &#x3C;span class=&#x22;backspace phonetic_inst backspace eng omitchar special_key keyboard_key_theme3&#x22;&#x3E;Backspace&#x3C;/span&#x3E;
+	         &#x3C;span class=&#x22;phonetic_keychar spacebar phonetic_inst eng omitchar special_key keyboard_key_theme3&#x22;&#x3E;Space&#x3C;/span&#x3E;&#x9;
+	         &#x3C;span class=&#x22;switch_charblock phonetic_keychar eng omitchar special_key!important keyboard_key_theme3&#x22; style=&#x22;width:200px&#x22;&#x3E;Main Keyboard&#x3C;/span&#x3E;
+	      &#x3C;/div&#x3E;
+	   &#x3C;/div&#x3E;
+
+	<b> &#x3C;/div&#x3E; </b>
+	<!-- /char_container -->
+</div>
+	
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<div id="odia_keyboard" class="keyboard pop draggable keyboard_theme3" >
+<div class="kbbanner_container">
+	<div class="left1">
+	<div class="kbbanner">
+		<img alt="Odia Keyboard" src="images/keyboardwh.png" width="20" height="12"> Odia Keyboard
+	</div>
+	</div>
+	<div class="left1" id="closebtn_container">
+	<div class="close eng"><img src="images/closebtn.png" width="23" height="23"></div>
+	</div>
+	<div class="left1" id="kbtheme_block_container">
+	<div class="kbtheme_block">
+		<!-- <label><input type="radio" name="kbtheme" id="kbtheme1" class="radio kbtheme" checked="checked"></label>
+		<label><input type="radio" name="kbtheme" id="kbtheme2" class="radio kbtheme"></label>
+		<label><input type="radio" name="kbtheme" id="kbtheme3" class="radio kbtheme"></label> -->
+		
+		<ul>
+  <li id="kbtheme1">
+    <input type="radio" id="f-option" name="selector" checked="">
+    <label for="f-option" id=""></label>
+    
+    <div class="check"></div>
+  </li>
+  
+   <li id="kbtheme3">
+    <input type="radio" id="t-option" name="selector">
+    <label for="t-option"></label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+  <li id="kbtheme2">
+    <input type="radio" id="s-option" name="selector">
+    <label for="s-option"></label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+ 
+</ul>
+
+	</div>
+	</div>
+	
+</div>
+
+<div id="char_container">
+   
+ <div class="row" id="commonchar_block" style="">
+ <div class="col-md-6" id="commonchar_block_1">
+ 	<div class="left">
+		<span id="a" class="phonetic_keychar keyboard_key_theme3">@</span>
+		<span id="aa" class="phonetic_keychar keyboard_key_theme3">@û</span>
+	
+		<span id="e" class="phonetic_keychar keyboard_key_theme3">A</span>
+		<span id="ee" class="phonetic_keychar keyboard_key_theme3">B</span>
+		<span id="u" class="phonetic_keychar keyboard_key_theme3">C</span>
+		<span id="uu" class="phonetic_keychar keyboard_key_theme3">D</span>
+		<span id="r" class="phonetic_keychar keyboard_key_theme3">E</span>
+		<span id="ru" class="phonetic_keychar keyboard_key_theme3">F</span>
+		<span id="ae" class="phonetic_keychar keyboard_key_theme3">G</span>
+		<span id="ay" class="phonetic_keychar keyboard_key_theme3">H</span>
+		<span id="o" class="phonetic_keychar keyboard_key_theme3">I</span>
+		<span id="oo" class="phonetic_keychar keyboard_key_theme3">J</span>
+		
+		<div id="gap" class="">&nbsp;</div>
+	
+			<span id="k" class="phonetic_keychar keyboard_key_theme3">K</span>
+			<span id="kh" class="phonetic_keychar keyboard_key_theme3">L</span>
+			<span id="g" class="phonetic_keychar keyboard_key_theme3">M</span>
+			<span id="gh" class="phonetic_keychar keyboard_key_theme3">N</span>
+			<span id="un" class="phonetic_keychar keyboard_key_theme3">O</span>
+			<span id="ch" class="phonetic_keychar keyboard_key_theme3">P</span>
+			<span id="chh" class="phonetic_keychar keyboard_key_theme3">Q</span>
+			<span id="j" class="phonetic_keychar keyboard_key_theme3">R</span>
+			<span id="jh" class="phonetic_keychar keyboard_key_theme3">S</span>
+			<span id="ny" class="phonetic_keychar keyboard_key_theme3">T</span>
+			<span id="t" class="phonetic_keychar keyboard_key_theme3">U</span>
+			<span id="th" class="phonetic_keychar keyboard_key_theme3">V</span>
+			<span id="d" class="phonetic_keychar keyboard_key_theme3">W</span>
+			<span id="d1" class="phonetic_keychar keyboard_key_theme3">Wÿ</span>
+			<span id="d2" class="phonetic_keychar keyboard_key_theme3">X</span>
+			<span id="d3" class="phonetic_keychar keyboard_key_theme3" style="display:none">Xÿ</span> 
+			<span id="na" class="phonetic_keychar keyboard_key_theme3">Y</span>
+		
+		
+		
+		    <span id="ta" class="phonetic_keychar keyboard_key_theme3">Z</span>
+		    <span id="tha" class="phonetic_keychar keyboard_key_theme3">[</span>
+		    <span id="da" class="phonetic_keychar keyboard_key_theme3">\</span>
+		    <span id="dha" class="phonetic_keychar keyboard_key_theme3">]</span>
+		
+		
+		    <span id="n" class="phonetic_keychar keyboard_key_theme3">^</span>
+			<span id="p" class="phonetic_keychar keyboard_key_theme3">_</span>
+			<span id="f" class="phonetic_keychar keyboard_key_theme3">`</span>
+		    <span id="b" class="phonetic_keychar keyboard_key_theme3">a</span>
+			<span id="v" class="phonetic_keychar keyboard_key_theme3">b</span>
+			<span id="m" class="phonetic_keychar keyboard_key_theme3">c</span>
+			<span id="j" class="phonetic_keychar keyboard_key_theme3">~</span>
+			<span id="ra" class="phonetic_keychar keyboard_key_theme3">e</span>
+			<span id="l" class="phonetic_keychar keyboard_key_theme3">k</span>
+			<span id="s" class="phonetic_keychar keyboard_key_theme3">i</span>
+			<span id="sh" class="phonetic_keychar keyboard_key_theme3">h</span>
+			<span id="sh." class="phonetic_keychar keyboard_key_theme3">g</span>
+			<span id="h" class="phonetic_keychar keyboard_key_theme3">j</span>
+			<span id="ky" class="phonetic_keychar keyboard_key_theme3">l</span>
+			<span id="ya" class="phonetic_keychar keyboard_key_theme3">d</span>
+			<span id="la" class="phonetic_keychar keyboard_key_theme3">f</span>
+	
+	
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¬</span>
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‚</span>
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">∙</span>
+		<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">…</span>
+		
+	
+	 
+	 
+</div>
+	
+		
+ 
+ </div>  
+ 
+ <div class="col-md-6" id="commonchar_block_2">
+ 		
+ 		
+ 		
+<div class="left">
+	<span id="sp1" class="phonetic_keychar dotcircle keyboard_key_theme3">◌û</span>
+	<span id="sp2" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ò</span>
+	<span id="sp3" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ú</span>
+	<span id="sp4" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ê</span>
+	<span id="sp5" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ì</span>
+	<span id="sp6" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ù</span>
+	<span id="sp7" class="phonetic_keychar dotcircle keyboard_key_theme3">◌÷÷</span>
+	<span id="sp8" class="phonetic_keychar dotcircle keyboard_key_theme3">◌øû</span>
+	<span id="sp9" class="phonetic_keychar dotcircle keyboard_key_theme3">◌øø</span>
+	<span id="sp10" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ô</span>
+	<span id="sp11" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ý</span>
+	<span id="sp12" class="phonetic_keychar dotcircle keyboard_key_theme3">◌â</span>
+	<span id="sp13" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ð</span>
+	<span id="sp14" class="phonetic_keychar dotcircle keyboard_key_theme3">◌é</span>
+	
+	<span id="sp17" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ü</span>
+	<span id="sp18" class="phonetic_keychar dotcircle keyboard_key_theme3">◌õ</span>
+	<span id="sp19" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ñ</span>
+	<span id="sp20" class="phonetic_keychar dotcircle keyboard_key_theme3">◌à</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ñ</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ò</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ó</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ô</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Õ</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ö</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌×</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ø</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ù</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ú</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Û</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ü</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Ý</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌Þ</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ß</span>
+
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ä</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌å</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌æ</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌è</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌ˆ</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌˜</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌†</span>
+	<span id="sp" class="phonetic_keychar dotcircle keyboard_key_theme3">◌£</span>
+	
+		
+</div>
+
+	<div class="left">
+		 <span class="backspace phonetic_inst backspace eng omitchar special_key keyboard_key_theme3">Backspace</span>
+		 <span class="phonetic_keychar spacebar phonetic_inst eng omitchar special_key keyboard_key_theme3">Space</span>		 
+		 <span class="switch_charblock phonetic_keychar odia omitchar special_key keyboard_key_theme3">~êqûle</span>
+	</div>
+
+ 
+ </div>  
+ <!-- /<div class="col-md-6"> /commonchar_block_2  -->
+ 
+ </div>  
+
+
+
+<div class="left" id="yuktakshyara_block" style="display: none;">
+	<span id="kn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">u</span>
+	<span id="khn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">v</span>
+	<span id="gn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">w</span>
+	<span id="ghn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">x</span>
+	<span id="chhh" class="phonetic_keychar yuktakshyara keyboard_key_theme3">y</span>
+	<span id="chhhh" class="phonetic_keychar yuktakshyara keyboard_key_theme3">z</span>
+	<span id="jj" class="phonetic_keychar yuktakshyara keyboard_key_theme3">{</span>
+	<span id="gj" class="phonetic_keychar yuktakshyara keyboard_key_theme3">|</span>
+	<span id="gn" class="phonetic_keychar yuktakshyara keyboard_key_theme3">m</span>
+    <span id="vv" class="phonetic_keychar yuktakshyara keyboard_key_theme3">n</span>
+	<span id="kk" class="phonetic_keychar yuktakshyara keyboard_key_theme3">o</span>
+    <span id="kt" class="phonetic_keychar yuktakshyara keyboard_key_theme3">q</span>
+	<span id="ks" class="phonetic_keychar yuktakshyara keyboard_key_theme3">r</span>
+	<span id="kr" class="phonetic_keychar yuktakshyara keyboard_key_theme3">p</span>
+	<span id="gc" class="phonetic_keychar yuktakshyara keyboard_key_theme3">s</span>
+	<span id="gd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">t</span>
+
+
+
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‹</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Œ</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‰</span>
+	
+	
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">±</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">}</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¦</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">ª</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">«</span>
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">®</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¯</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">°</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">²</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">´</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">µ</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¶</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¸</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¹</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">½</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¼</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">½</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¾</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">¿</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">À</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Á</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Â</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ã</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ä</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Å</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Æ</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ç</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">È</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">É</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ê</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ë</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ì</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Í</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ï</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ð</span>
+
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">Ÿ</span>
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">‡</span>
+	
+	
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">›</span>
+	<span id="dd" class="phonetic_keychar yuktakshyara keyboard_key_theme3">™</span>
+	
+
+<div class="left">
+		 <span class="backspace phonetic_inst backspace eng omitchar special_key keyboard_key_theme3">Backspace</span>
+		  <span class="phonetic_keychar spacebar phonetic_inst eng omitchar special_key keyboard_key_theme3">Space</span>	
+		 <span class="switch_charblock phonetic_keychar eng omitchar special_key!important keyboard_key_theme3" style="width:200px">Main Keyboard</span>
+	</div>
+
+</div>
+
+
+
+</div>
+<!--  /char_container  -->
+</div>
+
+
+<!--jQuery v3.1.1 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/draggabilly.pkgd.min.js"></script>
+<script type="text/javascript" src="js/odia-keyboard.js"></script>
+</body>
+</html>

@@ -378,3 +378,18 @@ div.close{
 #odia_name_kb{
   cursor: pointer;
 }
+
+/* Page CSS */
+.msg-text{
+  margin-top: 5px;
+  float: left;
+  margin-left: 90px;
+}
+
+.drag-text{
+  cursor: move;
+}
+.code {
+  white-space: pre-wrap;
+  margin-left: 20px;
+}
